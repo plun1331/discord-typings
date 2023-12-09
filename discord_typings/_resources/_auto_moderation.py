@@ -83,12 +83,12 @@ AutoModerationTriggerTypes = Literal[1, 2, 3, 4]
 class KeywordAutoModerationTriggerMetadata(TypedDict):
     keyword_filter: List[str]
     regex_patterns: List[str]
-
     allow_list: List[str]
 
 
 class KeywordPresetAutoModerationTriggerMetadataData(TypedDict):
     presets: List['discord_typings.AutoModerationKeywordPresetTypes']
+    allow_list: List[str]
 
 
 class MentionSpamAutoModerationTriggerMetadataData(TypedDict):
